@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		A2AF367123CCE3FC000390D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF367023CCE3FC000390D0 /* AppDelegate.swift */; };
 		A2AF367823CCE400000390D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AF367723CCE400000390D0 /* Assets.xcassets */; };
-		A2AF368623CCE400000390D0 /* POSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF368523CCE400000390D0 /* POSTests.swift */; };
+		A2AF368623CCE400000390D0 /* ProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF368523CCE400000390D0 /* ProductsTests.swift */; };
+		A2AF36A123CCEC77000390D0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A023CCEC77000390D0 /* Product.swift */; };
+		A2AF36A423CCF411000390D0 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A323CCF411000390D0 /* enums.swift */; };
+		A2AF36A623CCF68A000390D0 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A523CCF68A000390D0 /* ProductTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +31,11 @@
 		A2AF367723CCE400000390D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2AF367C23CCE400000390D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2AF368123CCE400000390D0 /* POSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2AF368523CCE400000390D0 /* POSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSTests.swift; sourceTree = "<group>"; };
+		A2AF368523CCE400000390D0 /* ProductsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTests.swift; sourceTree = "<group>"; };
 		A2AF368723CCE400000390D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AF36A023CCEC77000390D0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A2AF36A323CCF411000390D0 /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
+		A2AF36A523CCF68A000390D0 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +77,11 @@
 		A2AF366F23CCE3FC000390D0 /* POS */ = {
 			isa = PBXGroup;
 			children = (
+				A2AF36A223CCF3FE000390D0 /* Helpers */,
 				A2AF367023CCE3FC000390D0 /* AppDelegate.swift */,
 				A2AF367723CCE400000390D0 /* Assets.xcassets */,
 				A2AF367C23CCE400000390D0 /* Info.plist */,
+				A2AF36A023CCEC77000390D0 /* Product.swift */,
 			);
 			path = POS;
 			sourceTree = "<group>";
@@ -81,10 +89,19 @@
 		A2AF368423CCE400000390D0 /* POSTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2AF368523CCE400000390D0 /* POSTests.swift */,
+				A2AF36A523CCF68A000390D0 /* ProductTests.swift */,
+				A2AF368523CCE400000390D0 /* ProductsTests.swift */,
 				A2AF368723CCE400000390D0 /* Info.plist */,
 			);
 			path = POSTests;
+			sourceTree = "<group>";
+		};
+		A2AF36A223CCF3FE000390D0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A2AF36A323CCF411000390D0 /* enums.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AF367123CCE3FC000390D0 /* AppDelegate.swift in Sources */,
+				A2AF36A423CCF411000390D0 /* enums.swift in Sources */,
+				A2AF36A123CCEC77000390D0 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AF368623CCE400000390D0 /* POSTests.swift in Sources */,
+				A2AF368623CCE400000390D0 /* ProductsTests.swift in Sources */,
+				A2AF36A623CCF68A000390D0 /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

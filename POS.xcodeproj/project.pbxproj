@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99D3B6AF23CD897200BDFBF7 /* TaxCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D3B6AE23CD897200BDFBF7 /* TaxCalculatorTests.swift */; };
 		A2AF367123CCE3FC000390D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF367023CCE3FC000390D0 /* AppDelegate.swift */; };
 		A2AF367823CCE400000390D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AF367723CCE400000390D0 /* Assets.xcassets */; };
 		A2AF368623CCE400000390D0 /* ProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF368523CCE400000390D0 /* ProductsTests.swift */; };
 		A2AF36A123CCEC77000390D0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A023CCEC77000390D0 /* Product.swift */; };
 		A2AF36A423CCF411000390D0 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A323CCF411000390D0 /* enums.swift */; };
 		A2AF36A623CCF68A000390D0 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A523CCF68A000390D0 /* ProductTests.swift */; };
+		A2AF36A823CCFF0F000390D0 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A723CCFF0F000390D0 /* Products.swift */; };
+		A2AF36AA23CD07D0000390D0 /* DiscountCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36A923CD07D0000390D0 /* DiscountCalculator.swift */; };
+		A2AF36AC23CD0901000390D0 /* TaxtCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36AB23CD0901000390D0 /* TaxtCalculator.swift */; };
+		A2AF36AE23CD0A56000390D0 /* DiscountCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF36AD23CD0A56000390D0 /* DiscountCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99D3B6AE23CD897200BDFBF7 /* TaxCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculatorTests.swift; sourceTree = "<group>"; };
 		A2AF366D23CCE3FC000390D0 /* POS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AF367023CCE3FC000390D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AF367723CCE400000390D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +42,10 @@
 		A2AF36A023CCEC77000390D0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A2AF36A323CCF411000390D0 /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
 		A2AF36A523CCF68A000390D0 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		A2AF36A723CCFF0F000390D0 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		A2AF36A923CD07D0000390D0 /* DiscountCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCalculator.swift; sourceTree = "<group>"; };
+		A2AF36AB23CD0901000390D0 /* TaxtCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxtCalculator.swift; sourceTree = "<group>"; };
+		A2AF36AD23CD0A56000390D0 /* DiscountCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +91,10 @@
 				A2AF367023CCE3FC000390D0 /* AppDelegate.swift */,
 				A2AF367723CCE400000390D0 /* Assets.xcassets */,
 				A2AF367C23CCE400000390D0 /* Info.plist */,
+				A2AF36A723CCFF0F000390D0 /* Products.swift */,
 				A2AF36A023CCEC77000390D0 /* Product.swift */,
+				A2AF36A923CD07D0000390D0 /* DiscountCalculator.swift */,
+				A2AF36AB23CD0901000390D0 /* TaxtCalculator.swift */,
 			);
 			path = POS;
 			sourceTree = "<group>";
@@ -90,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A2AF36A523CCF68A000390D0 /* ProductTests.swift */,
+				A2AF36AD23CD0A56000390D0 /* DiscountCalculatorTests.swift */,
+				99D3B6AE23CD897200BDFBF7 /* TaxCalculatorTests.swift */,
 				A2AF368523CCE400000390D0 /* ProductsTests.swift */,
 				A2AF368723CCE400000390D0 /* Info.plist */,
 			);
@@ -204,7 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AF367123CCE3FC000390D0 /* AppDelegate.swift in Sources */,
+				A2AF36A823CCFF0F000390D0 /* Products.swift in Sources */,
 				A2AF36A423CCF411000390D0 /* enums.swift in Sources */,
+				A2AF36AA23CD07D0000390D0 /* DiscountCalculator.swift in Sources */,
+				A2AF36AC23CD0901000390D0 /* TaxtCalculator.swift in Sources */,
 				A2AF36A123CCEC77000390D0 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2AF368623CCE400000390D0 /* ProductsTests.swift in Sources */,
+				99D3B6AF23CD897200BDFBF7 /* TaxCalculatorTests.swift in Sources */,
 				A2AF36A623CCF68A000390D0 /* ProductTests.swift in Sources */,
+				A2AF36AE23CD0A56000390D0 /* DiscountCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

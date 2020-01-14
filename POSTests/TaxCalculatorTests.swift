@@ -11,27 +11,25 @@ import XCTest
 class TaxCalculatorTests: XCTestCase {
     
     func testShouldThrowInvalidErrorWhenEmptyStateGiven() {
-        XCTAssertThrowsError(try TaxCalculator(totalPrice: 10.00, stateCode: "")) { ( error ) in
+        XCTAssertThrowsError(try TaxCalculator(stateCode: "")) { ( error ) in
             XCTAssertEqual(error as? TaxError, TaxError.invalidState)
         }
     }
     
     func testShouldThrowInvalidErrorWhenUnavailableStateGiven() {
-        XCTAssertThrowsError(try TaxCalculator(totalPrice: 10.00, stateCode: "TN")) { ( error ) in
+        XCTAssertThrowsError(try TaxCalculator(stateCode: "TN")) { ( error ) in
             XCTAssertEqual(error as? TaxError, TaxError.invalidState)
         }
     }
     
-    func testTaxCalculatorNotNilWhenValidInputGiven() throws {
-        let taxCalculator = try TaxCalculator(totalPrice: 70.00, stateCode: "DK")
-        XCTAssertNotNil(taxCalculator)
+    func testTaxCalculatorShouldNotThrowWhenValidStateGiven() {
+        XCTAssertNoThrow(try TaxCalculator(stateCode: "DK"))
     }
     
-    func testTaxAWhenValidInputGiven() throws {
-        let taxCalculator = try TaxCalculator(totalPrice: 1000.00, stateCode: "DK")
-        if let tax = taxCalculator?.getTax() {
-            XCTAssertEqual(tax.amount, 250.00)
-            XCTAssertEqual(tax.percentage, 25.00)
-        }
+    func testTaxWhenValidInputGiven() {
+        XCTAssertEqual(try TaxCalculator(stateCode: "DK").getTax(for: 1500.00).amount, 375.00)
+        XCTAssertEqual(try TaxCalculator(stateCode: "DE").getTax(for: 1500.00).amount, 285.00)
+        XCTAssertEqual(try TaxCalculator(stateCode: "IS").getTax(for: 1500.00).amount, 382.50)
+        XCTAssertEqual(try TaxCalculator(stateCode: "CH").getTax(for: 1500.00).amount, 120.00)
     }
 }

@@ -1,13 +1,16 @@
 class DiscountCalculator {
     private let totalPrice: Double
-    init?(totalPrice: Double) throws {
-        if totalPrice < 0.00 {
-            throw DiscountError.invalidPrice
-        }
+    
+    init(totalPrice: Double) {
         self.totalPrice = totalPrice
     }
+    
     func getDiscount() -> Discount {
-        var discountAmount: Double = 0.00
+        let discountPercentage: Double = getDiscountPercentage()
+        return Discount(amount: self.totalPrice * (discountPercentage / 100.00), percentage: discountPercentage)
+    }
+    
+    private func getDiscountPercentage() -> Double {
         var discountPercentage: Double = 0.00
         switch self.totalPrice {
         case 1000..<4999:
@@ -23,7 +26,6 @@ class DiscountCalculator {
         default:
             discountPercentage = 0.00
         }
-        discountAmount = self.totalPrice * (discountPercentage / 100.00)
-        return Discount(amount: discountAmount, percentage: discountPercentage)
+        return discountPercentage
     }
 }
